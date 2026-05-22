@@ -1,0 +1,79 @@
+/* 1. Selector universal para cambiar fuente y centrar texto */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 30px 10px;
+}
+
+/* 2. Selector por etiqueta para cambiar el color de h1 */
+h1 {
+    color: #1a73e8;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+body > p {
+    color: #5f6368;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* 3. Selector por clase para las tarjetas de las publicaciones (.post) */
+/* Cumple con el modelo de caja obligatorio (padding, margin, border, width) */
+.post {
+    background-color: #ffffff; /* fondo */
+    border: 2px solid #dadce0;  /* borde */
+    padding: 20px;              /* padding */
+    margin: 20px auto;          /* margin (centrado con margin: auto) */
+    width: 450px;               /* width (necesario para margin: auto) */
+    max-width: 100%;            /* Asegura adaptabilidad en pantallas móviles */
+    border-radius: 12px;        /* Punto extra: border-radius para suavizar esquinas */
+}
+
+/* Selector por etiqueta para títulos h2 */
+h2 {
+    color: #202124;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Selector por etiqueta para los párrafos dentro de los posts */
+.post p {
+    color: #3c4043;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Selector por etiqueta para las imágenes de las publicaciones */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Punto extra: border-radius para las esquinas de las imágenes */
+    border: 1px solid #e8eaed;
+}
+
+/* 4. Selector por ID para el pie de página (#footer) */
+#footer {
+    color: #70757a; /* color */
+    font-size: 14px; /* tamaño */
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#footer a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
